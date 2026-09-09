@@ -23,6 +23,7 @@ mkdirSync(releaseDir, { recursive: true });
 for (const path of [
   "src",
   "assets",
+  "docs",
   "scripts",
   ".github",
   ".gitignore",

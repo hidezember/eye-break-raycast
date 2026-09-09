@@ -1,0 +1,60 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "eye-break-reminder",
+  "version": "0.2.0",
+  "title": "Eye Break Reminder",
+  "description": "Reminds you to rest your eyes after 30 minutes of active Mac use",
+  "icon": "icon.png",
+  "author": "lea",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "commands": [
+    {
+      "name": "eye-break-dashboard",
+      "title": "Start Eye Break Reminder",
+      "description": "View eye break statistics, pause reminders, or start a new session",
+      "mode": "view"
+    },
+    {
+      "name": "check-eye-break",
+      "title": "Eye Break Background Check",
+      "description": "Track active Mac use and remind you to rest your eyes",
+      "mode": "no-view",
+      "interval": "1m"
+    },
+    {
+      "name": "take-eye-break",
+      "title": "Take a 20-Second Eye Break",
+      "description": "Look into the distance and complete five full blinks",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.19"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "22.19.17",
+    "@types/react": "19.0.10",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^4.1.10"
+  },
+  "scripts": {
+    "build": "ray build -e dist -o dist",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "test": "vitest run",
+    "package": "npm run build && node scripts/package-release.mjs",
+    "publish:store": "ray publish"
+  }
+}

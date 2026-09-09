@@ -4,7 +4,7 @@
 
 一个轻量的 Raycast 护眼提醒扩展：累计约 **30 分钟活跃使用**后，打开 **20 秒休息页面**，提醒你看远处、完整眨眼 5 次。支持暂停、手动休息和本地统计。
 
-本仓库只包含 Raycast 版本，必须保持 Raycast 运行。不要与独立 macOS 版同时开启自动提醒，以免重复弹窗。
+本仓库只包含 Raycast 版本，必须保持 Raycast 运行。如果希望下载 App 直接安装，请查看 [独立 macOS 版](https://github.com/hidezember/eye-break-macos)。不要同时开启两个版本的自动提醒，以免重复弹窗。
 
 ## 安装
 
